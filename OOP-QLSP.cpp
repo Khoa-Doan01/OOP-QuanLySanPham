@@ -2,7 +2,6 @@
 #include <string> 
 #include <iomanip>
 using namespace std;
-//issue
 class Sanpham
 {
 	private :
