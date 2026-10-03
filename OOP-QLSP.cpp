@@ -2,6 +2,7 @@
 #include <string> 
 #include <iomanip>
 using namespace std;
+//Issue 2
 class Sanpham
 {
 	private :
@@ -75,6 +76,7 @@ class Sanpham
 		 void nhap();
 		 void xuat() const;
 };
+//Nhap xuat san pham
 void Sanpham::nhap()
 {
 	cout<<"Nhap ma san pham: ";
@@ -104,10 +106,11 @@ void Sanpham::xuat() const
          << setw(15) << SlTonKho
          << endl;
 }
+//Issue 3
 class QuanLySanPham
 {
 	private:
-		Sanpham ds[200];
+		Sanpham ds[200];// (mang 0<n<200) 
 		int SoLuong;
 	public:
 		QuanLySanPham()
@@ -162,6 +165,7 @@ void QuanLySanPham::InDanhSach() const
         ds[i].xuat();
     }
 }
+//Issue 4
 void QuanLySanPham::SapXep()
 {
 	for (int i=0;i<SoLuong-1;i++)
@@ -178,6 +182,7 @@ void QuanLySanPham::SapXep()
 	}
 	cout<<"\n Da sap xep danh sach theo don gia tang dan\n";
 }
+//Issue 5
 void QuanLySanPham::TimKhiem()
 {
 	string MaCanTim;
@@ -204,6 +209,7 @@ void QuanLySanPham::TimKhiem()
 		cout<<"Khong tim thay san pham voi ma vua nhap\n";
 	}
 }
+//Issue 6
 void QuanLySanPham::Them()
 {
 	if(SoLuong>=200)
